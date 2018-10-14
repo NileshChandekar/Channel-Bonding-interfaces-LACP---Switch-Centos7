@@ -236,7 +236,7 @@ details partner lacp pdu:
     port number: 257
     port state: 61
 
-Slave Interface: ens5  <==================== for interfaceens5 
+Slave Interface: ens5  <==================== for interface ens5 
 MII Status: up
 Speed: 1000 Mbps
 Duplex: full
@@ -265,6 +265,17 @@ details partner lacp pdu:
 [root@localhost ~]# 
 ~~~
 
+### Sever ``A`` - Centos IP's 
+
+
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether9.png)
+
+
+### Sever ``B`` - Centos IP's 
+
  
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether10.png)
+
+
 
 ![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether7.png)
