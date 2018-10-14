@@ -280,4 +280,31 @@ details partner lacp pdu:
 
 ![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether11.png)
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether7.png)
+
+# LACP Testing between Switch and Server. 
+
+### Test 1 - Ping from A (10.10.10.100) to (10.10.10.200) , On switch will down port Eth1/2 and Eth1/3
+
+
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether12.png)
+
+### Down port 1/2 , Still no ``PING`` loss
+
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether13.png)
+
+
+### Down port 1/3 , ``PING`` loss, as both port is ``DOWN``
+
+
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether15.png)
+
+
+
+### ``UP`` port 1/3 , no ``PING`` loss, NOTE : only one port  is ``UP``
+
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether16.png)
+
+
+### ``UP`` port 1/2 , no ``PING`` loss, NOTE : ``BOTH``  port  is ``UP``
+
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether17.png)
