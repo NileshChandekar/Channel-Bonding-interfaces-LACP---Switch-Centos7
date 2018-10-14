@@ -166,5 +166,10 @@ end
 wr
 ~~~
 
+### EtherChannel Summary (LACP) 
 
 ![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether6.png)
+
+### Interface ``TRUNK`` Details
+
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether7.png)
