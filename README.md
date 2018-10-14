@@ -2,3 +2,9 @@
 
 ![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether1.png)
 
+# Router Configuration 
+
+# Switch Configuration 
+
+
+
