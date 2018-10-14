@@ -1,14 +1,14 @@
 # Channel-Bonding-interfaces-LACP---Switch-Centos7
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether1.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether1.png)
 
 # Router Configuration 
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether5.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether5.png)
 
 # Switch Configuration 
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether4.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether4.png)
 
 ### Switch side configuration 
 
@@ -168,17 +168,17 @@ wr
 
 ### EtherChannel Summary (LACP) 
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether6.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether6.png)
 
 ### Interface ``TRUNK`` Details
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether7.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether7.png)
 
 # Server Side Configuration (Centos-7) 
 
 ### Both the Centos-7 nodes having 3 interfaces each, we are using only ``ens4`` & ``ens5`` on both the server. 
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether8.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether8.png)
 
 ### bond0 
 
@@ -268,17 +268,17 @@ details partner lacp pdu:
 ### Sever ``A`` - Centos IP's 
 
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether9.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether9.png)
 
 
 ### Sever ``B`` - Centos IP's 
 
  
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether10.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether10.png)
 
 ### Ping test between Server A and B 
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether11.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether11.png)
 
 
 # LACP Testing between Switch and Server. 
@@ -286,25 +286,25 @@ details partner lacp pdu:
 ### Test 1 - Ping from A (10.10.10.100) to (10.10.10.200) , On switch will down port Eth1/2 and Eth1/3
 
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether12.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether12.png)
 
 ### Down port 1/2 , Still no ``PING`` loss
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether13.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether13.png)
 
 
 ### Down port 1/3 , ``PING`` loss, as both port is ``DOWN``
 
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether15.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether15.png)
 
 
 
 ### ``UP`` port 1/3 , no ``PING`` loss, NOTE : only one port  is ``UP``
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether16.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether16.png)
 
 
 ### ``UP`` port 1/2 , no ``PING`` loss, NOTE : ``BOTH``  port  is ``UP``
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether17.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether17.png)
