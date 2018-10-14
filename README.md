@@ -51,5 +51,30 @@ end
 wr
 ~~~
 
+### Check vlan database details 
+
+
+~~~
+SW# sh vlan br
+~~~
+
+~~~
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Et0/0, Et0/1, Et0/2, Et0/3
+						Et1/0, Et1/1, Et1/2, Et1/3	
+10   ExternalNetworkVlanID            active    
+20   StorageNetworkVlanID             active    
+30   InternalApiNetworkVlanID         active    
+40   StorageMgmtNetworkVlanID         active    
+50   TenantNetworkVlanID              active    
+100  provisioning                     active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+SW#
+~~~
+
 
 ![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether4.png)
