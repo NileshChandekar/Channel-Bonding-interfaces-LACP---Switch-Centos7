@@ -4,7 +4,7 @@
 
 # Router Configuration 
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether2.png)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether5.png)
 
 # Switch Configuration 
 
