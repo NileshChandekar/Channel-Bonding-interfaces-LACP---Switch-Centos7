@@ -156,7 +156,7 @@ end
 wr
 ~~~
 
-### Channel Group 1 for port 1/2 - 3
+### Channel Group 2 for port 1/2 - 3
 
 ~~~
 conf t
@@ -265,13 +265,13 @@ details partner lacp pdu:
 [root@localhost ~]# 
 ~~~
 
-### Sever ``A`` - Centos IP's 
+### Server ``A`` - Centos IP's 
 
 
 ![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether9.png)
 
 
-### Sever ``B`` - Centos IP's 
+### Server ``B`` - Centos IP's 
 
  
 ![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether10.png)
@@ -281,7 +281,7 @@ details partner lacp pdu:
 ![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/images/ether11.png)
 
 
-# LACP Testing between Switch and Server. 
+# LACP Testing between Switch and Both Server. 
 
 ### Test 1 - Ping from A (10.10.10.100) to (10.10.10.200) , On switch will down port Eth1/2 and Eth1/3
 
