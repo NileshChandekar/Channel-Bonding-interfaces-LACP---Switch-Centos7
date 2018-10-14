@@ -77,4 +77,94 @@ SW#
 ~~~
 
 
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether4.png)
+### VTP CONFIGURATION ### 
+
+~~~
+conf t
+vtp mode server 
+vtp domain OPENSTACKLAB
+exit
+wr
+~~~
+
+### TRUNK PORT CONFIGURATION FOR VLAN RANGE 10-50 ###
+
+
+~~~
+configure terminal 
+interface range Ethernet 1/0 - 3
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan 1-4,10-50,1002-1005
+end
+wr
+~~~
+
+### STP CONFIGURATION
+~~~
+conf t
+interface range Ethernet 1/0 - 3
+switchport mode trunk
+spanning-tree portfast
+exit
+exit
+wr
+~~~
+
+### Check Trunk Details 
+
+~~~
+ESW1# sh interfaces trunk 
+~~~
+
+~~~
+Port      Mode         Encapsulation  Status        Native vlan
+Eth1/0    on           802.1q         trunking      1
+Eth1/1    on           802.1q         trunking      1
+Eth1/2    on           802.1q         trunking      1
+Eth1/3    on           802.1q         trunking      1
+
+Port      Vlans allowed on trunk
+Eth1/0    1-4,20-50,1002-1005
+Eth1/1    1-4,20-50,1002-1005
+Eth1/2    1-4,20-50,1002-1005
+Eth1/3    1-4,20-50,1002-1005
+
+Port      Vlans allowed and active in management domain
+Eth1/0    1-4,20-50,1002-1005
+Eth1/1    1-4,20-50,1002-1005
+Eth1/2    1-4,20-50,1002-1005
+Eth1/3    1-4,20-50,1002-1005
+
+Port      Vlans in spanning tree forwarding state and not pruned
+Eth1/0    1-4,20-50,1002-1005
+Eth1/1    1-4,20-50,1002-1005
+Eth1/2    1-4,20-50,1002-1005
+Eth1/3    1-4,20-50,1002-1005
+ESW1#
+~~~
+
+# Switch EtherChannel Configuration 
+
+### Channel Group 1 for port 1/0 - 1
+
+~~~
+conf t
+interface range Ethernet 1/0 - 1
+channel-group 1 mode active
+end
+wr
+~~~
+
+### Channel Group 1 for port 1/2 - 3
+
+~~~
+conf t
+interface range Ethernet 1/2 - 3
+channel-group 2 mode active
+end
+wr
+~~~
+
+
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether6.png)
