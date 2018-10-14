@@ -178,8 +178,7 @@ wr
 
 ### Both the Centos-7 nodes having 3 interfaces each, we are using only ``ens4`` & ``ens5`` on both the server. 
 
-
-![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether8)
+![Image vlan](https://github.com/NileshChandekar/Channel-Bonding-interfaces-LACP---Switch-Centos7/blob/master/ether8.png)
 
 ### bond0 
 
